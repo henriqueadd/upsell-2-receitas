@@ -386,7 +386,7 @@
 
         <div class="buy">
           <span class="price-extra meta">kit completo ·<br/>acesso imediato</span>
-          <button class="btn btn-primary" id="cta-main">Quero meu kit</button>
+          <a class="btn btn-primary" href="https://pay.cakto.com.br/offb4d9_1045529" target="_blank" rel="noopener">Quero meu kit</a>
         </div>
       </div>
     </section>
@@ -419,7 +419,6 @@
   </div>
 
   <script>
-    const ctaMain = document.getElementById('cta-main');
     const modal = document.getElementById('modal');
     const closeBtn = document.getElementById('modal-close');
     const form = document.getElementById('kit-form');
@@ -432,7 +431,6 @@
       modal.classList.add('open');
       document.getElementById('name').focus();
     }
-    ctaMain.addEventListener('click', openModal);
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
 
